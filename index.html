@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script defer src="./dist/js/script.js"></script>
+    <link href="./dist/css/style.css" rel="stylesheet" />
+    <title>Minute and Second of arc</title>
+  </head>
+  <body>
+    <div>
+      <input
+        id="striche"
+        max="3600000000"
+        min="2"
+        name="striche"
+        type="range"
+        value="2"
+      />
+
+      <!--	max:	3.600.000.000-->
+      <label for="striche">Value</label>
+      <input
+        id="kreisGroesse"
+        max="27"
+        min="10"
+        name="groesse"
+        type="range"
+        value="10"
+      />
+      <label for="kreisGroesse">Kreis durchmesser</label>
+    </div>
+
+	<div id="whatIsItId"></div>
+
+    <div class="criclePos">
+      <div id="circle"></div>
+    </div>
+  </body>
+</html>

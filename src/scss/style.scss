@@ -1,0 +1,30 @@
+.criclePos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  margin: 0;
+}
+
+body {
+  height: 95vh;
+}
+
+#circle {
+  position: absolute;
+  width: 23.622050220101rem; /* Startgröße des Kreises */
+  height: 23.622050220101rem;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform-origin: 0% 100%;
+  transform: translateX(100%) rotate(0deg);
+  width: 2px;
+  height: 10px; /* Länge der Striche */
+  background-color: rgba(110, 110, 110, 0.63);
+}
