@@ -26,19 +26,19 @@ function updateCircle() {
   const whatIsIt = document.createElement("h2");
 
 
-  if (numberOfLines == 4665600000) {
+  if (numberOfLines === 4665600000) {
     whatIsIt.innerText = "Every gap is 1 Microarcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines == 77760000) {
+  } else if (numberOfLines === 77760000) {
     whatIsIt.innerText = "Every gap is 1 Milliarcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines == 1296000) {
+  } else if (numberOfLines === 1296000) {
     whatIsIt.innerText = "Every gap is 1 Arcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines == 21600) {
+  } else if (numberOfLines === 21600) {
     whatIsIt.innerText = "Every gap is 1 Arcminute";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines == 360) {
+  } else if (numberOfLines === 360) {
     whatIsIt.innerText = "Each gap is 1° from this circle";
     whatIsItId.appendChild(whatIsIt);
   } else {
