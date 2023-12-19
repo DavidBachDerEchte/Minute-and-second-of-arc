@@ -26,27 +26,26 @@ function updateCircle() {
 
   const whatIsIt = document.createElement("h2");
 
-  const epsilon = 0.01; // Eine kleine Toleranz für Gleitkommazahlen
 
-  if (numberOfLines >= 4664 - epsilon) {
+  if (numberOfLines == 4664) {
     /* 4665600000 */
-    whatIsIt.innerText = "Every gap is 1 Micro-arc-sekunde big";
+    whatIsIt.innerText = "Every gap is 1 Microarcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 77.76 - epsilon) {
+  } else if (numberOfLines == 77) {
     /* 77760000 */
-    whatIsIt.innerText = "Every gap is 1 Milli-arc-sekunde big";
+    whatIsIt.innerText = "Every gap is 1 Milliarcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 1.296 - epsilon) {
+  } else if (numberOfLines == 2) {
     /* 1296000 */
-    whatIsIt.innerText = "Every gap is 1 Arc-sekunde big";
+    whatIsIt.innerText = "Every gap is 1 Arcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 0.0216 - epsilon) {
+  } else if (numberOfLines == 1) {
     /* 21600 */
-    whatIsIt.innerText = "Every gap is 1 Arc-minute big";
+    whatIsIt.innerText = "Every gap is 1 Arcminute";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 0.00036 - epsilon) {
+  } else if (numberOfLines == 0) {
     /* 360 */
-    whatIsIt.innerText = "Every gap is 1°";
+    whatIsIt.innerText = "The Circle is 1°";
     whatIsItId.appendChild(whatIsIt);
   } else {
     whatIsIt.innerText = "Minute and second of arc: ";

@@ -22,34 +22,45 @@
     <title>MSA - Real Scale</title>
   </head>
   <body>
-    <a href="../index.html">Home</a>
-    <div>
-      <h1>Real Scale</h1>
-    </div>
-    <div>
-      <input
-        id="striche"
-        max="4665600000"
-        min="360"
-        name="striche"
-        type="range"
-        value="360"
-      />
+    <div class="InfoClass">
+      <div id="leftSide">
+        <a href="../index.html">Home</a>
+        <div>
+          <h1>Real Scale</h1>
+        </div>
+        <div>
+          <input
+            id="striche"
+            max="4665600000"
+            min="360"
+            name="striche"
+            type="range"
+            value="360"
+          />
 
-      <label for="striche">Value &ensp; &ensp; &ensp;</label>
-      <input
-        id="kreisGroesse"
-        max="27"
-        min="10"
-        name="groesse"
-        type="range"
-        value="10"
-      />
-      <label for="kreisGroesse">Circle diameter</label>
-    </div>
+          <label for="striche">Value &ensp; &ensp; &ensp;</label>
+          <input
+            id="kreisGroesse"
+            max="27"
+            min="10"
+            name="groesse"
+            type="range"
+            value="10"
+          />
+          <label for="kreisGroesse">Circle diameter</label>
+        </div>
 
-    <div id="whatIsItId"></div>
-    <div id="whereIsItId"></div>
+        <div id="whatIsItId"></div>
+        <div id="whereIsItId"></div>
+      </div>
+      <div id="rightSide">
+        <h2>1° = Value: 360</h2>
+        <h2>1 Arcminute = Value: 21600</h2>
+        <h2>1 Arcsecond = Value: 1296000</h2>
+        <h2>1 Milliarcsecond = Value: 77760000</h2>
+        <h2>1 Microarcsecond = Value: 4665600000</h2>
+      </div>
+    </div>
 
     <div class="criclePos">
       <div id="circle"></div>

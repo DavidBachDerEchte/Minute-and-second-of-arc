@@ -16,6 +16,7 @@ body {
   height: 23.622050220101rem;
   border: 2px solid #ff0000;
   border-radius: 50%;
+  top: 14rem;
 }
 
 .line {
@@ -27,4 +28,9 @@ body {
   width: 2px;
   height: 10px; /* Länge der Striche */
   background-color: rgba(110, 110, 110, 0.63);
+}
+
+.InfoClass {
+  display: flex;
+  justify-content: space-between;
 }

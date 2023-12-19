@@ -25,22 +25,21 @@ function updateCircle() {
 
   const whatIsIt = document.createElement("h2");
 
-  const epsilon = 100; // Eine kleine Toleranz für Gleitkommazahlen
 
-  if (numberOfLines >= 4665600000 - epsilon) {
-    whatIsIt.innerText = "Every gap is 1 Micro-arc-sekunde big";
+  if (numberOfLines == 4665600000) {
+    whatIsIt.innerText = "Every gap is 1 Microarcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 77760000 - epsilon) {
-    whatIsIt.innerText = "Every gap is 1 Milli-arc-sekunde big";
+  } else if (numberOfLines == 77760000) {
+    whatIsIt.innerText = "Every gap is 1 Milliarcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 1296000 - epsilon) {
-    whatIsIt.innerText = "Every gap is 1 Arc-sekunde big";
+  } else if (numberOfLines == 1296000) {
+    whatIsIt.innerText = "Every gap is 1 Arcsecond";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 21600 - epsilon) {
-    whatIsIt.innerText = "Every gap is 1 Arc-minute big";
+  } else if (numberOfLines == 21600) {
+    whatIsIt.innerText = "Every gap is 1 Arcminute";
     whatIsItId.appendChild(whatIsIt);
-  } else if (numberOfLines >= 360 - epsilon) {
-    whatIsIt.innerText = "Every gap is 1°";
+  } else if (numberOfLines == 360) {
+    whatIsIt.innerText = "Each gap is 1° from this circle";
     whatIsItId.appendChild(whatIsIt);
   } else {
     whatIsIt.innerText = "Minute and second of arc: ";

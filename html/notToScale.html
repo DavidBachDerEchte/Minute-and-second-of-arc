@@ -22,38 +22,48 @@
     <title>MSA - Not to scale! 1:1.000.000</title>
   </head>
   <body>
-    <a href="../index.html">Home</a>
-    <div>
-      <h1>Not to scale! 1:1.000.000</h1>
+    <div class="InfoClass">
+      <div id="leftSide">
+        <a href="../index.html">Home</a>
+        <div>
+          <h1>Not to scale! 1:1.000.000</h1>
+        </div>
+        <div>
+          <input
+            id="striche"
+            max="4665"
+            min="0.00036"
+            name="striche"
+            step="1"
+            type="range"
+            value="0.00036"
+          />
+
+          <!--	max: 4.665.600.000-->
+          <!--		min: 360-->
+          <label for="striche">Value &ensp; &ensp; &ensp;</label>
+          <input
+            id="kreisGroesse"
+            max="27"
+            min="10"
+            name="groesse"
+            type="range"
+            value="10"
+          />
+          <label for="kreisGroesse">Circle diameter</label>
+        </div>
+
+        <div id="whatIsItId"></div>
+        <div id="whereIsItId"></div>
+      </div>
+      <div id="rightSide">
+        <h2>1° = Value: 0</h2>
+        <h2>1 Arcminute = Value: 1</h2>
+        <h2>1 Arcsecond = Value: 2</h2>
+        <h2>1 Milliarcsecond = Value: 77</h2>
+        <h2>1 Microarcsecond = Value: 4664</h2>
+      </div>
     </div>
-    <div>
-      <input
-        id="striche"
-        max="4665"
-        min="0.00036"
-        name="striche"
-        step="1"
-        type="range"
-        value="0.00036"
-      />
-
-      <!--	max: 4.665.600.000-->
-      <!--		min: 360-->
-      <label for="striche">Value &ensp; &ensp; &ensp;</label>
-      <input
-        id="kreisGroesse"
-        max="27"
-        min="10"
-        name="groesse"
-        type="range"
-        value="10"
-      />
-      <label for="kreisGroesse">Circle diameter</label>
-    </div>
-
-    <div id="whatIsItId"></div>
-    <div id="whereIsItId"></div>
-
     <div class="criclePos">
       <div id="circle"></div>
     </div>
