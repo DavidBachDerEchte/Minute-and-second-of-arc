@@ -1,4 +1,4 @@
-name: Minute and second of arc
+name: MinuteAndSecondOfArc
 type: php
 docroot: ""
 php_version: "8.1"

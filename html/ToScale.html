@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link
+      href="/android-chrome-192x192.png"
+      rel="icon"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="/site.webmanifest" rel="manifest" />
+    <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" />
+    <meta content="#2b5797" name="msapplication-TileColor" />
+    <meta content="/mstile-144x144.png" name="msapplication-TileImage" />
+    <meta content="#ffffff" name="theme-color" />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script defer src="../dist/js/ToScale.js"></script>
+    <link href="../dist/css/style.css" rel="stylesheet" />
+    <title>MSA - Real Scale</title>
+  </head>
+  <body>
+    <a href="../index.html">Home</a>
+    <div>
+      <h1>Real Scale</h1>
+    </div>
+    <div>
+      <input
+        id="striche"
+        max="4665600000"
+        min="360"
+        name="striche"
+        type="range"
+        value="360"
+      />
+
+      <label for="striche">Value &ensp; &ensp; &ensp;</label>
+      <input
+        id="kreisGroesse"
+        max="27"
+        min="10"
+        name="groesse"
+        type="range"
+        value="10"
+      />
+      <label for="kreisGroesse">Circle diameter</label>
+    </div>
+
+    <div id="whatIsItId"></div>
+    <div id="whereIsItId"></div>
+
+    <div class="criclePos">
+      <div id="circle"></div>
+    </div>
+  </body>
+</html>
